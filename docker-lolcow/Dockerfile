@@ -1,9 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install -y fortune cowsay lolcat
+RUN apt-get update && apt-get install -y cowsay lolcat
 
 ENV PATH /usr/games:${PATH}
 ENV LC_ALL=C
 
-ENTRYPOINT fortune | cowsay | lolcat
+ENTRYPOINT date | cowsay | lolcat
 
