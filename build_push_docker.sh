@@ -9,3 +9,4 @@ docker buildx build --platform "$PLATFORMS" -t sylabsio/lolcow:latest --push doc
 docker buildx build --platform "$PLATFORMS" -t sylabsio/userperms:latest --push docker-userperms
 docker buildx build --platform "$PLATFORMS" -t sylabsio/issue5298:latest --push docker-issue5298
 docker buildx build --platform "$PLATFORMS" -t sylabsio/labels:latest --push docker-labels
+docker buildx build --platform "$PLATFORMS" -t sylabsio/issue233:latest --push docker-issue233
