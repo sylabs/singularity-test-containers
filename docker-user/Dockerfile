@@ -6,4 +6,6 @@ RUN adduser -D -u 2000 -G testgroup testuser
 
 USER testuser
 
+WORKDIR /home/testuser
+
 CMD id

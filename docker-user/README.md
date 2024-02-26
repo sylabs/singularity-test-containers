@@ -5,3 +5,6 @@ config USER.
 
 When the container is run, using `--oci` mode, the container id output
 should reflect the USER entry in the Dockerfile.
+
+The WORKDIR of the container is set to the user's home directory
+(`/home/testuser`).
